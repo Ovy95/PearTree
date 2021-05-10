@@ -1,16 +1,16 @@
 class PearTree {
 
   pears = 12
-  successKnights = []
+  knights = []
   
   tree(isKnight){
 
     if(isKnight.role == "Knight"){
       this.pears--
-      this.successKnights.push(isKnight.name)
+      this.knights.push(isKnight.name)
     }
     if(isKnight.role == "Page"){
-      this.successKnights.push(isKnight.name)
+      this.knights.push(isKnight.name)
     }
   
     return this.pears
@@ -27,9 +27,9 @@ class PearTree {
 
   twelveKnights(){
     if(this.pears == 0){
-      return this.successKnights
+      return this.knights
     }
-    
+
   }
 
 
