@@ -9,6 +9,9 @@ describe("PearTree", function () {
     it("hardcoded returns value of pears",function() {
       expect(pearTree.tree({name: "Alice", role: "Software Engineer"})).toEqual(12)
     })
+    it("value of pears will be 11 as knight has picked one",function() {
+      expect(pearTree.tree({name: "Clara", role: "Knight"})).toEqual(11)
+    })
 
   })
 
