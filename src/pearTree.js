@@ -1,16 +1,24 @@
 class PearTree {
 
+  pears = 12
+  tree(isKnight){
 
-  tree(pearPickers,pears=12){
-
-    if(pearPickers.role == "Knight"){
-      pears--
+    if(isKnight.role == "Knight"){
+      this.pears--
     }
   
-    return pears
-    
-
+    return this.pears
   }
+
+  groupPickers(pearPickers){
+
+    for (let index = 0; index < pearPickers.length; index++) {
+      (this.tree(pearPickers[index]))
+    }
+
+    return this.pears
+  }
+
 
 
 }

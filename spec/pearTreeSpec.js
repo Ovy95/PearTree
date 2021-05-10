@@ -9,8 +9,12 @@ describe("PearTree", function () {
     it("hardcoded returns value of pears",function() {
       expect(pearTree.tree({name: "Alice", role: "Software Engineer"})).toEqual(12)
     })
+    it("hardcoded returns value of pears",function() {
+      expect(pearTree.tree({name: "Jack", role: "Knight"})).toEqual(11)
+    })
+
     it("value of pears will be 11 as knight has picked one",function() {
-      expect(pearTree.tree({name: "Clara", role: "Knight"})).toEqual(11)
+      expect(pearTree.groupPickers([{name: "Clara", role: "Knight"} ,{name: "Steven", role: "Knight"} ,{name: "Alice", role: "Software Engineer"}])).toEqual(10)
     })
 
   })
