@@ -16,6 +16,9 @@ You can interact with this programme from the JavaScript console in your browser
 2. Open SpecRunner.html
 3. Open your browser's dev tools and visit the console tab
 
+Example from the first function the value of pears drops by one when a Knight picks the tree.
+<img width="608" alt="Screenshot 2021-05-11 at 09 15 56" src="https://user-images.githubusercontent.com/57540755/117782710-cb61db00-b239-11eb-8a29-45a78c9926e4.png">
+
 ## The Task
 
 A pear tree that always starts with twelve pears has a peculiar property. Only knights can successfully pick a pear and accordingly reduce the number of pears remaining on the tree.
