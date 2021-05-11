@@ -56,7 +56,10 @@ https://github.com/Ovy95/PearTree/commit/b0fa963a6b37518d5c6519ae617be4fccd90b9b
 #### Part B
 
 My last commit which was to complete the riddle being if the Knights name was 'Each' then remove 1 pear. I returned the riddle along with the value of the current pears for my answer here. I also created another source and spec file to test it and to keep it separated. 
-https://github.com/Ovy95/PearTree/commit/6b4d3d66708c0ec9152f4d38ee554df2cc7f7bdc
+https://github.com/Ovy95/PearTree/blob/dcfe339385fe3a14822633ca01e7df66ab4cf505/spec/KnightEachSpec.js
+https://github.com/Ovy95/PearTree/blob/dcfe339385fe3a14822633ca01e7df66ab4cf505/src/KnightEach.js
+
+My Lastest commit I updated all the tests 
 
 ### Future work
 
@@ -71,6 +74,8 @@ Tests were written with [Jasmine (3.6.0)](https://github.com/jasmine/jasmine/rel
 To run the tests, clone the repo locally and run:
 
 ```bash
-$> cd bank-tech-test-js
+$> cd PearTree
 $> open ./SpecRunner.html
 ```
+
+<img width="1082" alt="Screenshot 2021-05-11 at 09 08 56" src="https://user-images.githubusercontent.com/57540755/117781490-9f922580-b238-11eb-8779-cee8f35a6c2e.png">
