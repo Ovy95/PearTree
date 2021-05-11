@@ -5,25 +5,25 @@ describe("PearTree", function () {
     pearTree = new PearTree();
   })
 
-  describe("Tree function,Takes in one argument being an object and default value of pears ",function () {
-    it("hardcoded returns value of pears",function() {
+  describe("Tree function,Takes in one argument, checks the roles of the members to see if they're knights updates Pear value accordingly ",function () {
+    it("Returns 12 pears as Alice isn't a Knight",function() {
       expect(pearTree.tree({name: "Alice", role: "Software Engineer"})).toEqual(12)
     })
-    it("value of pears will be 11 as knight has picked one",function() {
+    it("value of pears will be 11 as Jack is a knight and has picked one",function() {
       expect(pearTree.tree({name: "Jack", role: "Knight"})).toEqual(11)
     })
 
   })
-  describe("groupPickers function, Checks for group of pickers and returns the correct result depending on amount of knights",function () {
+  describe("groupPickers function, Checks for group of pickers and returns the correct result depending on amount of knights in the group",function () {
     
-    it("value of pears will be 10 as there are two knights",function() {
+    it("value of pears will be 10 as there are two 'knights' and one 'Software Engineer'",function() {
       expect(pearTree.groupPickers([{name: "Clara", role: "Knight"} ,{name: "Steven", role: "Knight"} ,{name: "Alice", role: "Software Engineer"}])).toEqual(10)
     })
 
   })
   describe("twelveKnights function, returns the knights names + the Page",function () {
     
-    it("12 Knights and a Page attempt to pick all the pears off the tree",function() {
+    it("The 12 Knights and a Page attempt to pick all the pears off the tree, returns a list of all the Knights who got a Pear and the Page who helped",function() {
       pearTree.groupPickers([
       {name: "Steven1", role: "Knight"} ,{name: "Sally2", role: "Knight"} , {name: "Jack3", role: "Knight"} ,
       {name: "Bob4", role: "Knight"} , {name: "Mark5", role: "Knight"},{name: "Jeff6", role: "Knight"} ,

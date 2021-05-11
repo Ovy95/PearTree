@@ -12,7 +12,7 @@ class PearTree {
     if(isKnight.role == "Page"){
       this.knights.push(isKnight.name)
     }
-  
+    
     return this.pears
   }
 
@@ -31,7 +31,5 @@ class PearTree {
     }
 
   }
-
-
 
 }

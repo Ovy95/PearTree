@@ -1,14 +1,14 @@
-describe("PearTreeEach", function () {
+describe("Knight", function () {
   
 
   beforeEach(function(){
-    pearTreeEach = new PearTreeEach();
+    knight = new Knight();
   })
 
-  describe("Check Names and Role in object matching to Each and Knight ",function () {
+  describe(" PART B Check Names and Role in object matching to 'Each' and 'Knight' ",function () {
 
-  it("12 Knights and a Page attempt to pick all the pears off the tree",function() {
-    expect(pearTreeEach.pickers([
+  it("12 Knights and a Page attempt to pick all the pears off the tree, However only one pear is picked off the tree and the knights name is 'Each'",function() {
+    expect(knight.pickers([
     {name: "Jack1", role: "Knight"} ,{name: "Sally2", role: "Knight"} , {name: "Jack3", role: "Knight"} ,
     {name: "Bob4", role: "Knight"} , {name: "Mark5", role: "Knight"},{name: "Jeff6", role: "Knight"} ,
     {name: "Kev7", role: "Knight"} , {name: "Each", role: "Knight"} ,{name: "Peach9", role: "Knight"} ,
